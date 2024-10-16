@@ -1,0 +1,101 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Container for the questions list */
+.container {
+    width: 80%; /* 80% of the page width */
+    margin: 20px auto; /* Center horizontally */
+    padding: 20px;
+    background: white; /* White background for the table */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Title Styles */
+h1 {
+    text-align: center;
+    color: #0072ff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+}
+
+th {
+    background-color: #0072ff;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    color: #555;
+    transition: background-color 0.3s ease;
+}
+
+tr:hover td {
+    background-color: rgba(0, 114, 255, 0.1); /* Row hover effect */
+}
+
+/* Button Styles */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Slightly reduce on click */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Full width on smaller screens */
+    }
+
+    h1 {
+        font-size: 28px; /* Smaller title on smaller screens */
+    }
+
+    th, td {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}

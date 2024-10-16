@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2); /* Light teal gradient */
+    color: #1a237e; /* Deep blue text for better contrast */
+    min-height: 100%; /* Ensure the body takes the full height */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Softer white background */
+    border-radius: 15px;
+    padding: 30px 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Light shadow */
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #1a237e; /* Deep blue header */
+}
+
+.questions-container {
+    text-align: left;
+    margin-top: 30px;
+    overflow-y: auto; /* Allows vertical scrolling for the questions */
+}
+
+.question-box {
+    background: rgba(255, 255, 255, 0.15); /* Soft translucent white */
+    border: 1px solid rgba(26, 35, 126, 0.3); /* Subtle dark border */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+}
+
+.question {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #1a237e; /* Deep blue text */
+}
+
+.options label {
+    font-size: 16px;
+    color: #1a237e; /* Deep blue label text */
+    margin-bottom: 5px;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #4fc3f7, #0288d1); /* Light-to-dark soothing blue */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #0277bd, #01579b); /* Darker blue gradient on hover */
+    transform: scale(1.05);
+}
+
+/* Increase the size of radio buttons */
+input[type="radio"] {
+    transform: scale(1.5); /* Adjust the scale to increase size */
+    margin-right: 10px;
+    cursor: pointer; /* Changes cursor to pointer for better UX */
+}

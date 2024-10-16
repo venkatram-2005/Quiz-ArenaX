@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Page Heading */
+.page-heading {
+    margin-top: 20px;
+    font-family: 'Times New Roman', serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Centered Container */
+.container {
+    width: 50%; /* Reduced table width */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+th, td {
+    padding: 16px;
+    text-align: left;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #0072ff;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:hover td {
+    background-color: rgba(0, 114, 255, 0.1); /* Row hover effect */
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Delete Button - Red Gradient */
+.btn-danger {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c); /* Red gradient */
+    box-shadow: 0 4px 12px rgba(255, 65, 108, 0.3);
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #ff2a3c, #ff3c6c);
+    transform: scale(1.05); /* Slight enlarge on hover */
+}
+
+.btn-danger:active {
+    transform: scale(0.95); /* Slight shrink on click */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Full width on smaller screens */
+    }
+
+    th, td {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}

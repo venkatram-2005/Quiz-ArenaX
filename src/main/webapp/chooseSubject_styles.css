@@ -1,0 +1,77 @@
+/* General reset for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2); /* Light Teal Gradient */
+    color: #1a237e; /* Deep blue text for good contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for the table */
+.table-container {
+    background: rgba(255, 255, 255, 0.9); /* Softer white background */
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
+    text-align: center;
+    margin: auto;
+    width: 90%; /* Increased width for a wider layout */
+    max-width: 1200px; /* Optional: Prevent the table from becoming too large */
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse;
+    margin: 20px 0;
+    color: #1a237e; /* Dark blue text */
+    table-layout: fixed; /* Ensures consistent column width */
+}
+
+/* Table header and cell styles */
+table th, table td {
+    padding: 15px;
+    border: 1px solid rgba(26, 35, 126, 0.3); /* Subtle dark border */
+    text-align: left;
+    font-size: 16px;
+    word-wrap: break-word; /* Ensures long text stays within the cell */
+}
+
+/* Table header */
+table th {
+    background: rgba(26, 35, 126, 0.2); /* Light dark-blue background */
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #1a237e; /* Dark blue text */
+}
+
+/* Table rows */
+table tr:nth-child(even) {
+    background: rgba(224, 247, 250, 0.5); /* Soft alternating teal-blue */
+}
+
+table tr:hover {
+    background: rgba(179, 229, 252, 0.6); /* Light soothing blue on hover */
+}
+
+/* Button styling */
+.attempt-btn {
+    background: linear-gradient(135deg, #4fc3f7, #0288d1); /* Light-to-dark soothing blue */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.attempt-btn:hover {
+    background: linear-gradient(135deg, #0277bd, #01579b); /* Darker blue gradient on hover */
+    transform: scale(1.05);
+}

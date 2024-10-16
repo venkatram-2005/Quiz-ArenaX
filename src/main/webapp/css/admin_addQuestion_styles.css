@@ -1,0 +1,85 @@
+/* General Reset for Body and HTML */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Blue Gradient */
+    color: #333; /* Default text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Ensure box-sizing applies to all elements */
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+/* Container for the form */
+.container {
+    max-width: 800px; /* Wider container */
+    margin: 50px auto;
+    padding: 30px; /* More padding for better aesthetics */
+    background: rgba(255, 255, 255, 0.95); /* Slightly opaque white */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Softer shadow */
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the heading */
+    color: #0056b3; /* Darker blue for heading */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px; /* More space between form groups */
+}
+
+/* Label Styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels for emphasis */
+}
+
+/* Input and Select Styles */
+input[type="text"], select {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Slightly more rounded */
+    font-size: 16px;
+}
+
+/* Button Styles */
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    background: linear-gradient(135deg, #0072ff, #00c6ff); /* Blue gradient */
+    color: white;
+    border: none;
+    border-radius: 6px; /* Slightly more rounded */
+    font-size: 18px; /* Slightly larger text */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #0072ff); /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly scale button on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+    
+    button {
+        font-size: 16px; /* Smaller button text on smaller screens */
+    }
+}

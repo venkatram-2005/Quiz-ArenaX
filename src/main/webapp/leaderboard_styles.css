@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2); /* Light teal gradient */
+    color: #1a237e; /* Deep blue text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaderboard-container {
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #1a237e; /* Deep blue header text */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+    padding: 15px 20px;
+    border: 1px solid rgba(26, 35, 126, 0.3); /* Deep blue border with transparency */
+    color: #1a237e; /* Deep blue text */
+    text-align: left;
+}
+
+.leaderboard-table th {
+    background: rgba(255, 255, 255, 0.3); /* Light background for header */
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.leaderboard-table td {
+    background: rgba(0, 0, 0, 0.1); /* Soft dark background for table data */
+    font-size: 16px;
+}
+
+.leaderboard-table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.2); /* Slightly lighter background for even rows */
+}
+
+/* Hover effect on table rows */
+.leaderboard-table tr:hover {
+    background: rgba(255, 255, 255, 0.3); /* Softer hover effect */
+}
+
+/* Button styles (if needed) */
+a {
+    text-decoration: none;
+    background: linear-gradient(135deg, #4fc3f7, #0288d1); /* Light-to-dark blue gradient */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+a:hover {
+    background: linear-gradient(135deg, #0277bd, #01579b); /* Darker blue gradient on hover */
+}

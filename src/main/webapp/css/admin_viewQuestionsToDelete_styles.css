@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Gradient background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh; /* Full height with overflow handling */
+    overflow-x: hidden;
+}
+
+/* Container to center the title and table */
+.container {
+    width: 80%; /* Slightly larger width */
+    margin: 20px auto; /* Center container with auto margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85); /* Slight white background with transparency */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Title Styles */
+h1 {
+    text-align: center;
+    color: #0072ff;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Glowing effect */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width inside the container */
+    max-width: 900px;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure rounded corners are applied */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #0072ff; /* Blue header background */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    color: #555;
+    transition: background-color 0.3s ease-in-out;
+}
+
+tr:hover td {
+    background-color: rgba(0, 114, 255, 0.1); /* Highlight row on hover */
+}
+
+/* Form Button Styles */
+form button {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Red gradient */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 65, 108, 0.3); /* Red button shadow */
+}
+
+form button:hover {
+    transform: scale(1.05); /* Enlarge on hover */
+    background: linear-gradient(135deg, #ff2a6c, #ff3c3b);
+}
+
+form button:active {
+    transform: scale(0.95); /* Slight shrink on click */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Adjust width on smaller screens */
+    }
+
+    th, td {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    form button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,110 @@
+/* General Reset for Body and HTML */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Gradient background */
+    color: #333; /* Default text color */
+    height: 100vh; /* Full height */
+}
+
+/* Container for the form */
+.container {
+    max-width: 600px; /* Wider container */
+    margin: 50px auto;
+    padding: 30px; /* More padding for better aesthetics */
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque white */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    
+    /* Centering the container */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the container */
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the heading */
+    color: #0072ff; /* Blue color for heading */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px; /* More space between form groups */
+}
+
+/* Label Styles */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold; /* Bold labels for emphasis */
+    color: #555; /* Darker gray for contrast */
+}
+
+/* Input Styles */
+input[type="text"] {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 6px; /* Slightly rounded */
+    font-size: 16px;
+    transition: border-color 0.3s; /* Smooth transition */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+
+/* Input Focus Styles */
+input[type="text"]:focus {
+    border-color: #0072ff; /* Highlight border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Warning Styles */
+.warning {
+    color: #ff4d4d; /* Red for warnings */
+    font-size: 12px;
+    margin-top: 4px; /* Space above warnings */
+}
+
+/* Button Styles */
+button, .button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    background: linear-gradient(135deg, #0072ff, #00c6ff); /* Gradient background for button */
+    color: white;
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    font-size: 18px; /* Larger text */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+/* Button Hover Styles */
+button:hover, .button:hover {
+    background: linear-gradient(135deg, #0056b3, #0072ff); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Slightly raise button */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Button Active Styles */
+button:active, .button:active {
+    transform: translateY(0); /* Reset position */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Reduce shadow */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    button {
+        font-size: 16px; /* Smaller button text on smaller screens */
+    }
+}

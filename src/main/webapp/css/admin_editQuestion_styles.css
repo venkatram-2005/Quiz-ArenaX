@@ -1,0 +1,97 @@
+/* General Reset for Body and HTML */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Blue Gradient */
+    color: #333; /* Default text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Ensure box-sizing applies to all elements */
+* {
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+/* Container for the form */
+.container {
+    max-width: 600px; /* Limit the width of the container */
+    width: 100%; /* Allow full width */
+    padding: 20px; /* Padding for better aesthetics */
+}
+
+/* Form Styles */
+form {
+    padding: 30px; /* Padding inside the form */
+    background: rgba(255, 255, 255, 0.95); /* Slightly opaque white */
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Softer shadow */
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the heading */
+    color: #0056b3; /* Darker blue for heading */
+}
+
+/* Form Group Styles */
+label {
+    display: block;
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels for emphasis */
+}
+
+/* Input, Textarea and Select Styles */
+input[type="text"], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Increased padding */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    margin-bottom: 20px; /* Space below inputs */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+/* Textarea specific styles */
+textarea {
+    height: 100px; /* Set height for textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Input Styles on Focus */
+input[type="text"]:focus, select:focus, textarea:focus {
+    border-color: #0072ff; /* Change border color on focus */
+}
+
+/* Button Styles */
+input[type="submit"] {
+    width: 100%; /* Full width */
+    padding: 12px; /* Increased padding */
+    background: linear-gradient(135deg, #0072ff, #00c6ff); /* Blue gradient */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #0056b3, #0072ff); /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly scale button on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    form {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    input[type="submit"] {
+        font-size: 16px; /* Smaller button text on smaller screens */
+    }
+}

@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #008080, #00b3b3); /* Teal Blue Gradient */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Allow the sections to stretch */
+    width: 100%;
+    max-width: 1100px; /* Set a max-width for larger screens */
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque background for the container */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Prevent overflow from inner elements */
+}
+
+.image-section {
+    flex: 1; /* Take equal space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding around the image section */
+}
+
+.card-image {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    border-radius: 8px;
+}
+
+.form-section {
+    flex: 1; /* Take equal space */
+    padding: 40px; /* Increased padding for a more spacious layout */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    overflow: hidden; /* Prevent overflow */
+}
+
+h1 {
+    margin: 15px 0;
+    color: #333; /* Darker color for better contrast */
+    text-align: center; /* Center the heading */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; /* Darker color for better visibility */
+}
+
+input {
+    width: calc(100% - 20px); /* Ensure input width accounts for padding */
+    padding: 10px;
+    border: 1px solid #ccc; /* Added border for better visibility */
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 1); /* Opaque background for better contrast */
+    font-size: 16px;
+    margin: 0; /* Remove default margin */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #004d4d, #006666); /* Dark teal blue gradient for button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #003333, #004d4d); /* Even darker gradient on hover */
+}
