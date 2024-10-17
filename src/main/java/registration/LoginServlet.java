@@ -30,7 +30,7 @@ public class LoginServlet extends HttpServlet {
 		if(request.getParameter("mode").equals("StudentLogin")) {
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver") ;
-				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/quizarena?allowPublicKeyRetrieval=true&useSSL=false", "root", "valluri200513") ;
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/quizarena?allowPublicKeyRetrieval=true&useSSL=false", "root", "password") ;
 				PreparedStatement pst = con.prepareStatement("Select * from users where username = ? and userpassword = ?") ;
 				pst.setString(1, username) ;
 				pst.setString(2, userpassword) ; 
@@ -54,7 +54,7 @@ public class LoginServlet extends HttpServlet {
 		else if(request.getParameter("mode").equals("TeacherLogin")) {
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver") ;
-				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/quizarena?allowPublicKeyRetrieval=true&useSSL=false", "root", "valluri200513") ;
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/quizarena?allowPublicKeyRetrieval=true&useSSL=false", "root", "password") ;
 				PreparedStatement pst = con.prepareStatement("Select * from admins where username = ? and userpassword = ?") ;
 				pst.setString(1, username) ;
 				pst.setString(2, userpassword) ; 
